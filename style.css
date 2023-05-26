@@ -1,0 +1,335 @@
+body {
+  width: 100%;
+  background: #f9fdfd;
+  margin: 0;
+  height: 0;
+}
+header {
+  width: 100%;
+  background: #ababad;
+}
+.swal2-title {
+  font-family: Arial;
+}
+.cajaTitulo {
+  width: 940px;
+  position: relative;
+}
+#logo {
+  float: inherit;
+  margin-top: 14px;
+  margin-left: 1%;
+  margin-right: 30%;
+  box-sizing: border-box;
+}
+#titulo {
+  font-family: "Arial";
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+.container {
+  position: relative;
+  width: 98vw;
+  height: 100vh;
+}
+.txtArea {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  left: 15%;
+  top: 7%;
+  padding: 20px;
+  border: none;
+  resize: none;
+  line-height: 150%;
+  border-radius: 18px;
+  background-color: #ced2da;
+  box-sizing: border-box;
+}
+.txtArea::placeholder {
+  color: rgb(255, 255, 255);
+}
+.txtArea:focus,
+.txtArea:active {
+  border: none;
+  outline: none;
+}
+.leyenda {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  width: 80%;
+  left: 16%;
+  top: 68%;
+}
+.leyenda p {
+  color: rgb(29, 28, 28);
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 17px;
+  line-height: 140%;
+  opacity: 1;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.btns {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  padding: 1% 0;
+  position: absolute;
+  width: 80%;
+  left: 15%;
+  top: 74%;
+  margin-right: 10px;
+}
+.encrypt-btn {
+  font-family: "Arial";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 19px;
+  text-align: center;
+  color: white;
+  background-color: #1d1280;
+  border: 2px solid rgb(34, 0, 128);
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  gap: 8px;
+  width: 25%;
+  margin-right: 19px;
+  cursor: pointer;
+  transition: 0.1s all;
+}
+.decrypt-btn {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 19px;
+  text-align: center;
+  color: #1d1280;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  gap: 8px;
+  width: 25%;
+  background: #bdbcc9;
+  border: 2px solid #1d1280;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.1s all;
+}
+.encrypt-btn:hover,
+.decrypt-btn:hover {
+  background-color: #236ea0;
+  color: white;
+  border: 2px solid white;
+  transform: scale(0.9);
+}
+.encriptadoCtn {
+  background: #ced2da;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 30%;
+  height: 70%;
+  left: 63%;
+  top: 7%;
+  box-shadow: 0px 25px 30px -6px rgba(0, 0, 0, 0.08);
+  border-radius: 30px;
+}
+.mensaje-encriptado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  box-sizing: border-box;
+  gap: 15%;
+  position: absolute;
+  width: 100%;
+  top: 54%;
+  text-align: center;
+}
+.mensaje-encriptado h2 {
+  font-family: "Arial";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  width: 60%;
+  text-align: center;
+  color: black;
+}
+.mensaje-encriptado p {
+  font-family: "Arial";
+  font-style: normal;
+  font-size: 15px;
+  width: 80%;
+  font-weight: 400;
+  text-align: center;
+  color: black;
+  line-height: 150%;
+  top: 15%;
+}
+.encriptadoCtn img {
+  position: absolute;
+  width: 40%;
+  height: 50%;
+  top: 10%;
+}
+#areams {
+  display: none;
+}
+.areaMensaje textarea {
+  background: #ced2da;
+  display: flex;
+  position: absolute;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  justify-content: center;
+  width: 30%;
+  height: 70%;
+  left: 63%;
+  top: 7%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+.copiarTx {
+  font-family: "Arial";
+  font-weight: bold;
+  color: #ffffff;
+  background: #1b0483;
+  display: flex;
+  position: absolute;
+  text-align: center;
+  width: 30%;
+  height: 6%;
+  left: 63%;
+  top: 78%;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.copiarTx:hover {
+  background-color: #236ea0;
+  opacity: 0.5;
+  color: #fff;
+}
+.info-msj {
+  font-family: "Arial";
+  font-size: 30px;
+  color: #495077;
+  resize: none;
+  border: none;
+  outline: none;
+}
+.footer-d {
+  text-align: center;
+  background: #03001c;
+}
+.footer-d p {
+  font-family: "Arial";
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 2rem;
+  margin: 5px;
+  color: white;
+}
+
+/* crear Responsive Desing */
+@media (max-width: 1200px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .encriptarTexto {
+    width: 100%;
+  }
+  .txtArea {
+    width: 80%;
+    height: 35%;
+    left: 10%;
+    top: 5%;
+  }
+  .leyenda {
+    width: 80%;
+    left: 14%;
+    top: 40%;
+  }
+  .leyenda p {
+    font-size: 15px;
+  }
+  .btns {
+    width: 80%;
+    left: 10%;
+    top: 43%;
+  }
+  .encrypt-btn,
+  .decrypt-btn {
+    width: 50%;
+    border-radius: 15px;
+  }
+  .encrypt-btn:hover,
+  .decrypt-btn:hover {
+    margin: 0.5%;
+    width: 47%;
+    padding: 1.6%;
+  }
+  .encriptadoCtn {
+    width: 80%;
+    height: 35%;
+    left: 10%;
+    top: 53%;
+  }
+  .mensaje-encriptado {
+    width: 100%;
+    top: 55%;
+  }
+  .encriptadoCtn img {
+    width: 19%;
+    height: 55%;
+  }
+  .areaMensaje textarea {
+    width: 79%;
+    height: 33%;
+    left: 10%;
+    top: 54%;
+    border-radius: 30px;
+  }
+  .areaMensaje button {
+    text-align: center;
+    width: 25%;
+    height: 3%;
+    top: 89%;
+  }
+  #titulo {
+    display: none;
+  }
+  header {
+    width: 100%;
+    background: #e3e3e7;
+  }
+
+}

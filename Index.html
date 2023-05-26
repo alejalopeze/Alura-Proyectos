@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head> 
+        <meta charset="UTF-8" />
+        <title>Encriptador</title>
+        <link rel="shortcut icon" href="images/encriptado.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="main.js">
+          
+        </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head> 
+    <body>
+        <header>
+            <div class="contenedor-titulo">
+              <img id = logo src="images/logo.png" alt="">
+              <h1 id="titulo">Challenge I: Encriptador de Texto</h1>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="encrypt-text">
+                    <textarea
+                        name="textArea"
+                        class="txtArea"
+                        id="cifrarTexto"
+                        cols="30"
+                        rows="10"
+                        placeholder="Ingresa el texto aqui"
+                    ></textarea>
+                    <div class="leyenda">
+                        <p><i class="fa-solid fa-circle-exclamation"></i> Sólo encripta letras minúsculas, sin acentos.</p>
+                    </div>  
+                    <div class="btns">
+                      <button class="encrypt-btn" type="button" id="btn-encrypt" onclick="encriptarTexto()">
+                        <i class="fa-solid fa-lock"></i> Encriptar
+                      </button>
+                      <button class="decrypt-btn" type="button" id="btn-decrypt" onclick="desencriptarTexto()">
+                        <i class="fa-solid fa-unlock"></i> Desencriptar
+                      </button>
+                  </div>
+            </div>
+                  <div class="encriptadoCtn">
+                    <img src="images/search.png" alt="" id="imagen" />
+                    <div class="mensaje-encriptado" id="msj-encriptado">
+                      <h2 id="msj-entrada">No se encontró ningún texto.</h2>
+                      <p id="descripcion">Ingresa el texto que desea encriptar o desencriptar</p>
+                    </div>
+                  </div>
+                  
+                  <div class="areaMensaje" id="areams">
+                    <textarea name="resultado" id="encriptadoTxt" class="info-msj"></textarea>
+                    <button class="copiarTx" type="button" id="btn-copiar" onclick="copiarTexto()"><i class="fa-solid fa-copy"></i> Copiar Texto</button>
+                  </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+          <div class="footer-d">
+            <p>Created by: Alejandra Lopez</p>
+        </footer>
+    </body>
+</html>
